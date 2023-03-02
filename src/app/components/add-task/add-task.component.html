@@ -1,0 +1,32 @@
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="description">Task</label>
+    <input
+      type="text"
+      name="description"
+      [(ngModel)]="description"
+      id="description"
+      placeholder="Add Task"
+    />
+  </div>
+  <div class="form-control">
+    <label for="date">Date</label>
+    <input
+      type="text"
+      name="date"
+      [(ngModel)]="date"
+      id="date"
+      placeholder="Formato de data yyyy-mm-dd"
+    />
+  </div>
+  <div class="form-control form-control-check">
+    <label for="status">Status</label>
+    <input
+      type="checkbox"
+      name="status"
+      [(ngModel)]="status"
+      id="status"
+    />
+  </div>
+  <input type="submit" value="Save Task" class="btn btn-block" />
+</form>

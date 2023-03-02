@@ -1,0 +1,11 @@
+<div
+  [ngClass]="{ reminder: task.status }"
+  class="task"
+  (dblclick)="onToggle(task)"
+>
+<h3>
+  {{ task.description }}
+</h3>
+<p>Data: {{ task.date }}</p>
+<p>Status: {{ task.status }}</p>
+</div>

@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Monthly meeting",
+      "date": "May 5th at 2:30pm",
+      "status": true
+    },
+    {
+      "id": 2,
+      "description": "Check KPI",
+      "date": "May 6th at 2:30pm",
+      "status": true
+    },
+    {
+      "id": 3,
+      "description": "Production Line Setup",
+      "date": "May 7th at 12:30pm",
+      "status": false
+    }
+  ]
+}
