@@ -12,7 +12,6 @@ export class UiService {
 
   toggleAddTask(): void {
     this.showAddTask = !this.showAddTask;
-    debugger;
     this.subject.next(this.showAddTask);
   }
 

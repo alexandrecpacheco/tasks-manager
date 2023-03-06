@@ -26,7 +26,6 @@ export class AddTaskComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
-    debugger;
     if (!this.description) {
       alert('Please add a task!');
       return;
@@ -39,11 +38,8 @@ export class AddTaskComponent implements OnInit {
     };
 
     this.onAddTask.emit(newTask);
-
     this.description = '';
     this.date = '';
     this.status = false;
-    
-    this.taskService.getTasks();
   }
 }
